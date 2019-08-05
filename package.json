@@ -1,20 +1,17 @@
 {
-  "name": "wallet-swerver-goit",
+  "name": "wallet-server-goit",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
-    "build": "webpack --env.mode production --config ./webpack/config.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "webpack-dev-server --env.mode development --config ./webpack/config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/allacleo/wallet-server-goit-hw1.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Alla Sariieva <alla.cleo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
@@ -36,6 +33,7 @@
     "html-webpack-plugin": "^3.2.0",
     "img-loader": "^3.0.1",
     "mini-css-extract-plugin": "^0.7.0",
+    "mocha": "^6.2.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
@@ -48,6 +46,8 @@
   },
   "dependencies": {
     "core-js": "^3.1.4",
-    "handlebars": "^4.1.2"
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
+    "lodash": "^4.17.15"
   }
 }
